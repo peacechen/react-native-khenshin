@@ -1,8 +1,10 @@
 # react-native-khenshin
 
+This is a fork of https://github.com/khipu/react-native-khenshin published to [npmjs.com](https://www.npmjs.com/package/react-native-khenshin).
+
 ## Add the library to your project
 
-    yarn add https://github.com/khipu/react-native-khenshin
+    npm install react-native-khenshin
 
 ## Install and configure
 
@@ -13,14 +15,14 @@
 ```typescript
 import React from 'react';
 import {SafeAreaView, ScrollView, Button} from 'react-native';
-import Khipu from 'react-native-khenshin';
+import khenshin from 'react-native-khenshin';
 
 function App(this: any): JSX.Element {
     const onStartPayment = () => {
-        Khipu.startPaymentById('mboyd2tem42r')
+        khenshin.startPaymentById('mboyd2tem42r')
             .then(({status, result}) => {
                 if (status === 'CONCILIATING') {
-                    // khipu is conciliating the payment
+                    // khenshin is conciliating the payment
                 } else if (status === 'USER_CANCELED') {
                     // The user cancelled the transaction
                 } else {
