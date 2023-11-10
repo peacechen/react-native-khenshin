@@ -1,6 +1,6 @@
 # react-native-khenshin
 
-This is a fork of https://github.com/khipu/react-native-khenshin published to [npmjs.com](https://www.npmjs.com/package/react-native-khenshin).
+This is a fork of https://github.com/khipu/react-native-khenshin published to [npmjs.com](https://www.npmjs.com/package/react-native-khenshin) to unlock the peer dependencies.
 
 ## Add the library to your project
 
